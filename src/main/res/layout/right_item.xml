@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/right_msg_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:gravity="center_horizontal"
+        android:text="2016-3-23"
+        android:textColor="#8b8b8b"
+        android:textSize="12.7sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/right_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/right_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:background="@mipmap/chat1"
+                android:gravity="center_vertical"
+                android:text="好好学习，天天向上"
+                android:textSize="16sp"
+                android:textColor="#ffffff"/>
+
+            <LinearLayout
+                android:id="@+id/right_icon"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/to_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Miss cat"
+                    android:textSize="13sp"
+                    android:textColor="#666666"/>
+
+                <ImageView
+                    android:layout_width="49dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@mipmap/cat" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+</LinearLayout>
